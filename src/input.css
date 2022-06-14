@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+    @apply bg-lime-500;
+}
+
+.smooth {
+    @apply transform duration-150;
+}
+
+.bg-secondary {
+    @apply bg-cyan-500;
+}
+
+.btn-primary {
+    @apply bg-primary smooth p-2 rounded-lg hover:bg-lime-400 hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+    @apply bg-secondary smooth p-2 rounded-lg hover:bg-cyan-400 hover:-translate-y-0.5;
+}
+
+.signup {
+    @apply w-full h-full flex flex-col gap-4 justify-center items-center;
+}
+
+form {
+    @apply flex flex-col gap-4 w-3/12;
+}
+
+input[type=text] {
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+}
+input[type=password] {
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+}
+input[type=email] {
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+}
+input[type=tel] {
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+}
