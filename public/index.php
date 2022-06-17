@@ -6,7 +6,10 @@ if(!isset($_SESSION['vcaf_user'])){
 }else{
     ?>
 
-<p class="bg-gray-500">Hello <?php if(isset($_SESSION['vcaf_user'])){ echo $_SESSION['vcaf_user']; } else { echo ""; } ?></p>
+<!-- <p class="bg-gray-500">Hello <?php if(isset($_SESSION['vcaf_user'])){ echo $_SESSION['vcaf_user']; } else { echo ""; } ?></p> -->
+<div class="w-full h-full">
+<?php include 'components/navbar/index.php'; ?>
+</div>
 
 <script>
     var title = "Homepage";
