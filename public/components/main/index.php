@@ -35,4 +35,3 @@
             <span>0000</span>
         </div>
     </div>
-</div>
