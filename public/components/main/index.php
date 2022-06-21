@@ -1,37 +1,48 @@
-<div class="w-full h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 mt-10 mx-10 gap-4">
-    <div class="statcards">
-        <div class="flex gap-2">
-            <i class="fa-thin fa-2x fa-briefcase"></i>
-            <p>Total Investment</p>
+<main class="w-full flex flex-col">
+    <section class="w-full h-max flex justify-center my-10">
+        <div class="w-max h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
+            <div class="statcards">
+                <div class="statcont">
+                    <i class="fa-thin fa-2x fa-briefcase"></i>
+                    <p>Total Investment</p>
+                </div>
+                <div class="statnum">
+                    <span>0000</span>
+                </div>
+            </div>
+            <div class="statcards">
+                <div class="statcont">
+                    <i class="fa-thin fa-2x fa-briefcase"></i>
+                    <p>Own Total Savings</p>
+                </div>
+                <div class="statnum">
+                    <span>0000</span>
+                </div>
+            </div>
+            <div class="statcards">
+                <div class="statcont">
+                    <i class="fa-thin fa-2x fa-briefcase"></i>
+                    <p>Towards Vidanta</p>
+                </div>
+                <div class="statnum">
+                    <span>0000</span>
+                </div>
+            </div>
+            <div class="statcards">
+                <div class="statcont">
+                    <i class="fa-thin fa-2x fa-briefcase"></i>
+                    <p>Highest Investment</p>
+                </div>
+
+                <div class="statnum">
+                    <span>0000</span>
+                </div>
+            </div>
         </div>
-        <div class="statnum">
-            <span>0000</span>
+    </section>
+    <section class="w-full h-max lg:container lg:mx-auto">
+        <div class="w-full px-10 py-4 bg-gray-500">
+            something
         </div>
-    </div>
-    <div class="statcards">
-        <div class="flex gap-2">
-            <i class="fa-thin fa-2x fa-briefcase"></i>
-            <p>Total Investment</p>
-        </div>
-        <div class="statnum">
-            <span>0000</span>
-        </div>
-    </div>
-    <div class="statcards">
-        <div class="flex gap-2">
-            <i class="fa-thin fa-2x fa-briefcase"></i>
-            <p>Total Investment</p>
-        </div>
-        <div class="statnum">
-            <span>0000</span>
-        </div>
-    </div>
-    <div class="statcards">
-        <div class="flex gap-2">
-            <i class="fa-thin fa-2x fa-briefcase"></i>
-            <p>Total Investment</p>
-        </div>
-        <div class="statnum">
-            <span>0000</span>
-        </div>
-    </div>
+    </section>
+</main>

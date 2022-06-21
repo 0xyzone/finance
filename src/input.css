@@ -130,8 +130,12 @@ input[type=tel] {
   }
 
   .statcards {
-    @apply w-96 px-6 py-8 bg-white !text-black rounded-lg text-2xl flex items-center justify-around shadow-lg shadow-black;
+    @apply w-[22.5rem] px-6 py-8 bg-white !text-black rounded-lg text-2xl flex items-center justify-around shadow-lg shadow-black;
   }
   .statnum {
     @apply bg-gray-300 rounded-lg p-4;
+  }
+
+  .statcont {
+    @apply flex items-center gap-4;
   }
