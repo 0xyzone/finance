@@ -2,6 +2,9 @@
 session_start();
 include "globalvar.php";
 include "db.php";
+if(isset($_SESSION['vcaf_user'])){
+    $user = $_SESSION['vcaf_user'];
+}
 ?>
 
 <!DOCTYPE html>
