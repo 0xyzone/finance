@@ -1,4 +1,4 @@
-<main class="w-full flex flex-col">
+<main class="w-full flex flex-col ml-16">
     <section class="w-full h-max flex justify-center my-10">
         <div class="w-max h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
             <div class="statcards">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-max lg:container lg:mx-auto">
+    <section class="w-10/12 2xl:w-full h-max lg:container mx-auto">
         <div class="w-full px-10 py-4 bg-gray-500">
             something
         </div>
