@@ -584,6 +584,7 @@ video {
   right: 2rem;
 }
 
+<<<<<<< Updated upstream
 .top-0 {
   top: 0px;
 }
@@ -592,14 +593,19 @@ video {
   bottom: 0px;
 }
 
+=======
+>>>>>>> Stashed changes
 .z-20 {
   z-index: 20;
 }
 
+<<<<<<< Updated upstream
 .z-10 {
   z-index: 10;
 }
 
+=======
+>>>>>>> Stashed changes
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -614,10 +620,13 @@ video {
   margin-top: 0.5rem;
 }
 
+<<<<<<< Updated upstream
 .ml-16 {
   margin-left: 4rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .block {
   display: block;
 }
@@ -664,10 +673,13 @@ video {
   height: max-content;
 }
 
+<<<<<<< Updated upstream
 .h-auto {
   height: auto;
 }
 
+=======
+>>>>>>> Stashed changes
 .w-full {
   width: 100%;
 }
@@ -678,8 +690,13 @@ video {
   width: max-content;
 }
 
+<<<<<<< Updated upstream
 .w-10\/12 {
   width: 83.333333%;
+=======
+.w-32 {
+  width: 8rem;
+>>>>>>> Stashed changes
 }
 
 .w-16 {
@@ -1208,12 +1225,21 @@ input[type=tel]:focus {
       max-width: 1536px;
     }
   }
+<<<<<<< Updated upstream
 }
 
 @media (min-width: 1536px) {
   .\32xl\:w-full {
     width: 100%;
   }
+=======
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+>>>>>>> Stashed changes
 
   .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
