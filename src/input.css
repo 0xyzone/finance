@@ -34,16 +34,16 @@ form {
 }
 
 input[type=text] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
 }
 input[type=password] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
 }
 input[type=email] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
 }
 input[type=tel] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white;
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
 }
 
 
