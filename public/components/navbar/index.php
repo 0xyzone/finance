@@ -4,6 +4,9 @@ include 'menuvars.php';
 
 <div class="w-16 h-auto bg-slate-500 flex flex-col justify-between py-3 gap-2 fixed top-0 bottom-0 z-10">
     <div class="flex flex-col gap-2">
+        <div>
+            <a href="<?php echo link ; ?>" class="navbtn"><img src="" alt="logo"></a>
+        </div>
         <?php foreach($menuitems as $menu): ?>
             
         <a href="<?php echo $menu['link']; ?>" class="navbtn"><?php echo $menu['icon']; ?></a>
