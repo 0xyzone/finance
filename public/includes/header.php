@@ -20,7 +20,7 @@ if(isset($_SESSION['vcaf_user'])){
     <title id="title"></title>
 </head>
 
-<body class="bg-neutral-800 w-full h-screen relative">
+<body class="bg-neutral-800 w-full h-screen relative overflow-hidden">
 
     <?php
     if (isset($_SESSION['error'])) :

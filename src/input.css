@@ -6,7 +6,7 @@ body {
   @apply text-white;
 }
 .bg-primary {
-    @apply bg-lime-500;
+    @apply bg-lime-700;
 }
 
 .smooth {
@@ -18,7 +18,7 @@ body {
 }
 
 .btn-primary {
-    @apply bg-primary smooth p-2 rounded-lg hover:bg-lime-400 hover:-translate-y-0.5;
+    @apply bg-primary smooth p-2 rounded-lg hover:bg-lime-600 hover:-translate-y-0.5;
 }
 
 .btn-secondary {
@@ -26,24 +26,15 @@ body {
 }
 
 .signup {
-    @apply w-full h-full flex flex-col gap-4 justify-center items-center;
+    @apply w-8/12 h-full lg:w-2/12 lg:h-full flex flex-col gap-4 justify-center items-center mx-auto -mt-32 lg:mt-0;
 }
 
 form {
     @apply flex flex-col gap-4 w-3/12;
 }
 
-input[type=text] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
-}
-input[type=password] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
-}
-input[type=email] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
-}
-input[type=tel] {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full;
+input {
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full pb-2;
 }
 
 
@@ -126,7 +117,7 @@ input[type=tel] {
   ---- */
 
   .navbtn {
-    @apply w-10 h-10 bg-white text-black rounded-lg mx-auto flex justify-center items-center;
+    @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex justify-center items-center text-2xl hover:scale-110;
   }
 
   .statcards {

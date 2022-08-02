@@ -6,9 +6,9 @@ if (isset($_SESSION['vcaf_user'])) {
 } else {
 ?>
 
-    <section class="signup">
-        <div class="text-2xl font-bold text-white">Log In</div>
-        <form action="login.php" method="POST" id="signup">
+    <section class="signup fadeInBottom">
+        <div class="text-6xl font-bold text-white mb-10">Log In</div>
+        <form action="login.php" method="POST" id="signup" class="w-full">
             <input type="text" name="uname" id="uname" placeholder="Username/Email Address/Phone" autofocus="on" required>
             <div class="relative w-full">
                 <input type="password" name="pw" id="pw" placeholder="Password" required class="w-full z-0">
@@ -18,9 +18,6 @@ if (isset($_SESSION['vcaf_user'])) {
                 <button for="signup" type="submit" class="w-max btn-primary mx-auto">Log In</button>
                 <p class="text-gray-500">or</p>
                 <a href="<?php echo link; ?>signup" class="w-max btn-primary mx-auto ">Sign Up</a>
-            </div>
-            <div>
-                <p>If you forgot your password then GG! Arko banauna pardaina bcz mai hu na hehe lol :D </p>
             </div>
         </form>
         <script>

@@ -1,9 +1,9 @@
 <?php
 include "../includes/header.php";
 ?>
-<section class="signup">
-    <div class="text-2xl font-bold text-white">Sign Up</div>
-    <form action="signup.php" method="POST" id="signup">
+<section class="signup fadeInTop">
+    <div class="font-bold text-white text-6xl mb-10">Sign Up</div>
+    <form action="signup.php" method="POST" id="signup" class="w-full">
         <input type="text" name="uname" id="uname" placeholder="Username" autofocus="on" required>
         <input type="email" name="email" id="email" placeholder="Email Address" required>
         <input type="tel" name="tel" id="tel" placeholder="Contact No." required>

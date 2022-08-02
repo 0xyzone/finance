@@ -8,14 +8,16 @@ if (!isset($_SESSION['vcaf_user'])) {
 
     <main class="w-full h-full flex">
         <?php include 'components/navbar/index.php'; ?>
+        <div class="md:ml-16">
+            <?php
+            if (isset($_SESSION['vcaf_user']) && $_SESSION['vcaf_user'] == "admin") {
+                include 'components/admin/index.php';
+            } else {
+                include 'components/main/index.php';
+            }
+            ?>
+        </div>
 
-        <?php
-        if(isset($_SESSION['vcaf_user']) && $_SESSION['vcaf_user'] == "admin"){
-            include 'components/admin/index.php';
-        } else {
-            include 'components/main/index.php';
-        }
-        ?>
     </main>
 
     <script>
