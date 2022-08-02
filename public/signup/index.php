@@ -1,6 +1,10 @@
 <?php
 include "../includes/header.php";
 ?>
+<script>
+    var title = "Signup - Finance";
+    $("#title").html(title);
+</script>
 <section class="signup fadeInTop">
     <div class="font-bold text-white text-6xl mb-10">Sign Up</div>
     <form action="signup.php" method="POST" id="signup" class="w-full">
@@ -18,14 +22,14 @@ include "../includes/header.php";
         </div>
     </form>
     <script>
-        $('#showhide').click(function(){
+        $('#showhide').click(function() {
             // alert("Handler for .click() called.");
-            if($('#pw').attr('type') == "password"){
+            if ($('#pw').attr('type') == "password") {
                 $('#pw').attr('type', 'text');
                 $('#eye').removeClass('fa-eye');
                 $('#eye').addClass('fa-eye-slash');
             } else {
-                $('#pw').attr('type','password');
+                $('#pw').attr('type', 'password');
                 $('#eye').removeClass('fa-eye-slash');
                 $('#eye').addClass('fa-eye');
             }

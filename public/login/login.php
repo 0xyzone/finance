@@ -16,7 +16,7 @@ if($_POST){
         $_SESSION['vcaf_user'] = $res['uname'];
         header('Location: '.$site);
     } else {
-        $_SESSION['error'] = "Incorrect credentials. Please try again.";
+        $_SESSION['error'] = "Password Nai Birsyo? P@55w0rdn@!b!r5y0";
         header('Location: '.$site.'login');
     }
 }

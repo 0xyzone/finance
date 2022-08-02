@@ -8,7 +8,7 @@ if (!isset($_SESSION['vcaf_user'])) {
 
     <main class="w-full h-full flex">
         <?php include 'components/navbar/index.php'; ?>
-        <div class="md:ml-16">
+        <div class="md:ml-16 w-full h-full p-10">
             <?php
             if (isset($_SESSION['vcaf_user']) && $_SESSION['vcaf_user'] == "admin") {
                 include 'components/admin/index.php';
@@ -20,11 +20,7 @@ if (!isset($_SESSION['vcaf_user'])) {
 
     </main>
 
-    <script>
-        var title = "Homepage";
-        $("#title").html(title);
-    </script>
-
 <?php
-}
+include './includes/footer.php';
+};
 ?>

@@ -5,8 +5,11 @@ if (isset($_SESSION['vcaf_user'])) {
     header('Location: ' . $site);
 } else {
 ?>
-
-    <section class="signup fadeInBottom">
+    <script>
+        var title = "Login - Finance";
+        $("#title").html(title);
+    </script>
+    <section class="signup fadeInTop">
         <div class="text-6xl font-bold text-white mb-10">Log In</div>
         <form action="login.php" method="POST" id="signup" class="w-full">
             <input type="text" name="uname" id="uname" placeholder="Username/Email Address/Phone" autofocus="on" required>

@@ -14,13 +14,14 @@ if(isset($_SESSION['vcaf_user'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="<?php echo link ?>img/logo.gif" type="image/x-icon"> -->
     <link rel="stylesheet" href="<?php echo link ?>css/output.css">
     <link rel="stylesheet" href="<?php echo link ?>css/all.css">
     <script src="<?php echo link ?>js/jquery-3.6.0.min.js"></script>
     <title id="title"></title>
 </head>
 
-<body class="bg-neutral-800 w-full h-screen relative overflow-hidden">
+<body class="bg-neutral-800 w-screen h-screen relative">
 
     <?php
     if (isset($_SESSION['error'])) :
