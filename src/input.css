@@ -34,7 +34,7 @@ form {
 }
 
 input {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full pb-2;
+    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full pb-1;
     
 }
 
