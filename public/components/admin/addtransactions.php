@@ -1,16 +1,22 @@
 <?php
 $ujaquery = mysqli_query($db, "SELECT * FROM vcaf_users");
 $mops = array("Bank", "Cash", "eSewa", "Khalti", "IMEpay", "Others");
+if($_POST){
+    date_default_timezone_set('Asia/Kathmandu');
+    $date = date('Y-m-d H:i:s');
+    $user = $_POST['tuser'];
+    $transdate = $_POST['transdate'];
+    
+}
 ?>
-<style>
 
-</style>
 <script>
     var title = "Add Transaction - Finance";
     $("#title").html(title);
 </script>
+
 <main class="w-full h-full flex justify-center">
-    <form action="" method="get" class="w-full lg:w-4/12">
+    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post" class="w-full lg:w-4/12">
         <div class="select" tabindex="1">
             <input class="selectopt" name="tuser" type="radio" id="opt0" value="invalid" checked>
             <label for="opt0" class="option">Select an user</label>
