@@ -6,7 +6,7 @@ if (!isset($_SESSION['vcaf_user'])) {
 } else {
 ?>
 
-    <main class="w-full h-full flex">
+    <main class="w-full h-full md:flex">
         <?php include 'components/navbar/index.php'; ?>
         <div class="md:ml-16 w-full h-full p-10">
             <?php
