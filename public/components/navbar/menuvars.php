@@ -13,36 +13,6 @@ if($_SESSION['vcaf_user'] == "admin"){
         "link" => "?page=transactions",
         "icon" => "<i class='fa-solid fa-circle-plus'></i>"
     ],
-    "transactions1" =>
-    [
-        "name" => "Transactions",
-        "link" => "?page=transactions",
-        "icon" => "<i class='fa-solid fa-circle-plus'></i>"
-    ],
-    "transactions2" =>
-    [
-        "name" => "Transactions",
-        "link" => "?page=transactions",
-        "icon" => "<i class='fa-solid fa-circle-plus'></i>"
-    ],
-    "transactions3" =>
-    [
-        "name" => "Transactions",
-        "link" => "?page=transactions",
-        "icon" => "<i class='fa-solid fa-circle-plus'></i>"
-    ],
-    "transactions4" =>
-    [
-        "name" => "Transactions",
-        "link" => "?page=transactions",
-        "icon" => "<i class='fa-solid fa-circle-plus'></i>"
-    ],
-    "transactions5" =>
-    [
-        "name" => "Transactions",
-        "link" => "?page=transactions",
-        "icon" => "<i class='fa-solid fa-circle-plus'></i>"
-    ],
 );
 } else {
     $menuitems = array(

@@ -17,18 +17,18 @@ include 'menuvars.php';
         <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
     </div>
 </div>
-<div class="w-full h-16 bg-stone-900/50 flex justify-between items-center gap-2 top-0 z-10 md:hidden sticky">
+<div class="w-full h-16 bg-stone-700/50 flex items-center gap-2 z-10 md:hidden fixed bottom-0 border-b-2 border-b-stone-800/50">
     <div class="flex gap-2 w-full items-center">
-        <div class="w-12 bg-gray-50 h-max rounded-r-full shadow-lg">
+        <div class="w-16 bg-gray-50 rounded-r-2xl shadow-lg">
             <a href="<?php echo link; ?>"><img src="<?php echo link; ?>img/logo.gif" alt="logo"></a>
         </div>
-        <div class="flex gap-2 w-4/12 overflow-auto">
+        <div class="flex gap-2 w-6/12 overflow-x-auto overflow-y-hidden mx-auto scrollbar-thin scrollbar-thumb-translate scrollbar-track-lime-9 rounded-full p-2 border-2 border-lime-700 mb-0.5 bg-lime-700">
             <?php foreach ($menuitems as $menu) : ?>
-                <a href="<?php echo $menu['link']; ?>" class="navbtn"><?php echo $menu['icon']; ?></a>
+                <a href="<?php echo $menu['link']; ?>" class="navbtn2"><?php echo $menu['icon']; ?></a>
             <?php endforeach; ?>
         </div>
-    </div>
-    <div class="flex gap-2 bg-gray-50 w-16 rounded-l-full shadow-lg justify-center items-center">
-        <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
+        <div class="flex flex-none gap-2 bg-gray-50 w-16 h-16 rounded-l-2xl shadow-lg justify-center items-center">
+            <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
+        </div>
     </div>
 </div>

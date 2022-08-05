@@ -184,6 +184,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .navbtn {
     @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex justify-center items-center text-2xl hover:scale-110;
   }
+  .navbtn2 {
+    @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex flex-none justify-center items-center text-2xl;
+  }
 
   .statcards {
     @apply w-[22.5rem] px-6 py-8 bg-white !text-black rounded-lg text-2xl flex items-center justify-around shadow-lg shadow-black;
@@ -195,3 +198,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .statcont {
     @apply flex items-center gap-4;
   }
+@layer components{
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+}
+  
+
+  
