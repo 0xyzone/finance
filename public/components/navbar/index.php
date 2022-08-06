@@ -17,8 +17,11 @@ include 'menuvars.php';
         <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
     </div>
 </div>
-<div class="w-full h-16 bg-stone-700/50 flex items-center gap-2 z-10 md:hidden fixed bottom-0 border-b-2 border-b-stone-800/50">
-    <div class="flex gap-2 w-full items-center">
+<div class="w-full h-16 flex items-center gap-2 z-10 md:hidden fixed bottom-0 border-b-2">
+    <div class="w-full h-20 -mb-5 flex-none absolute bg-stone-800 blur z-0">
+
+    </div>
+    <div class="flex gap-2 w-full items-center z-10">
         <div class="w-16 bg-gray-50 rounded-r-2xl shadow-lg">
             <a href="<?php echo link; ?>"><img src="<?php echo link; ?>img/logo.gif" alt="logo"></a>
         </div>
@@ -31,4 +34,5 @@ include 'menuvars.php';
             <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
         </div>
     </div>
+   
 </div>

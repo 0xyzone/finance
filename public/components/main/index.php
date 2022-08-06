@@ -10,9 +10,9 @@
         var title = "Homepage";
         $("#title").html(title);
     </script>
-    <main class="w-full flex flex-col">
+    <main class="w-full flex flex-col pb-32">
         <section class="w-full h-max flex justify-center my-10 fadeInTop">
-            <div class="w-max h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
+            <div class="w-full h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
                 <div class="statcards">
                     <div class="statcont">
                         <i class="fa-thin fa-2x fa-briefcase"></i>
