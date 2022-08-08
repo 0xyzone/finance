@@ -2,15 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  virtual-keyboard: overlays-content;
+}
+
 body {
   @apply text-white;
 }
-.bg-primary {
-    @apply bg-lime-700;
+
+fieldset {
+  @apply border-2 rounded-lg px-3 pt-2 pb-4 flex items-center justify-center w-max mx-auto;
+}
+
+legend {
+  @apply px-2 text-center font-bold;
+}
+
+.titlebar {
+  @apply w-full p-2 flex gap-4 items-center text-2xl font-bold outline outline-1 rounded-lg;
 }
 
 .smooth {
     @apply transform duration-150;
+}
+
+.bg-primary {
+    @apply bg-lime-700;
 }
 
 .bg-secondary {
@@ -29,25 +46,6 @@ body {
     @apply w-8/12 h-full lg:w-2/12 lg:h-full flex flex-col gap-4 justify-center items-center mx-auto -mt-32 lg:mt-0;
 }
 
-form {
-    @apply flex flex-col gap-4 w-3/12;
-}
-
-input {
-    @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full pb-1;
-    
-}
-
-select {
-  @apply bg-transparent border-b-2 px-2 outline-none focus:border-b-lime-500 smooth text-white w-full pb-2;
-}
-
-
-input[name="tuser"]{
-  opacity: 0;
-  position: absolute;
-  left: -99999px;
-}
 
 .select {
   @apply flex flex-col relative w-full h-[40px];
@@ -55,7 +53,6 @@ input[name="tuser"]{
 
 .option {
   @apply p-[0_30px_0_10px] min-h-[40px] flex items-center bg-stone-700 w-full absolute top-0 border-t-[#222] border-t pointer-events-none order-2 z-[1] whitespace-nowrap box-border overflow-hidden;
-  transition: background 0.4s ease-in-out;
 }
 
 .option:hover {
@@ -67,6 +64,9 @@ input[name="tuser"]{
   pointer-events: all;
 }
 
+/* ----
+    Forms & Input
+  ----- */
 
 input[type="radio"][name='tuser']:checked+label {
   order: 1;
@@ -104,6 +104,100 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
 
+form {
+    @apply flex flex-col gap-4 w-3/12;
+}
+
+input[type="text"] {
+    @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
+input[type="date"] {
+  @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
+input[type="number"] {
+  @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
+input[type="password"] {
+  @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
+
+input[name="tuser"]{
+  opacity: 0;
+  position: absolute;
+  left: -99999px;
+}
+
+input[type="radio"][name="mop"] {
+  display: none;
+}
+
+input[type="radio"][name="mop"]+label {
+  @apply p-2 border-2 rounded-lg w-full hover:bg-lime-600 hover:border-lime-600 hover:cursor-pointer smooth ;
+}
+
+input[type="radio"][name="mop"]:checked+label {
+  @apply ring-2 ring-lime-600 bg-lime-600 border-transparent scale-105;
+  transition: background 0.4s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  @apply bg-lime-600 text-lime-600 focus:ring-0 focus:outline-none focus:border-transparent rounded-full ring-0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ----
+    Forms & Input - end
+  ----- */
+
+.bignav{
+  @apply w-16 h-auto bg-stone-900/50 md:flex flex-col justify-between gap-2 fixed top-0 bottom-0 z-10 hidden;
+}
+
+.smallnav {
+  @apply w-full h-16 flex items-center gap-2 z-10 md:hidden fixed bottom-2 border-b-2;
+}
+
+.navbtn {
+  @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex justify-center items-center text-2xl hover:scale-110;
+}
+.navbtn2 {
+  @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex flex-none justify-center items-center text-2xl;
+}
+
+.statcards {
+  @apply lg:w-[22.5rem] w-full px-6 py-8 bg-white !text-black rounded-lg lg:text-2xl flex items-center justify-around shadow-lg shadow-black;
+}
+.statnum {
+  @apply bg-gray-300 rounded-lg p-4;
+}
+
+.statcont {
+  @apply flex items-center gap-4;
+}
+
+@layer components{
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+}
+  
 /* ----
     Animations
   ---- */
@@ -137,6 +231,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .fadeInTop {
     animation: fadeInTop 1s;
   }
+
   @keyframes fadeInTop {
     0% {
       opacity: 0;
@@ -176,39 +271,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
   }
 
-
-  /* ----
+/* ----
     Animations - end
   ---- */
-
-  .navbtn {
-    @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex justify-center items-center text-2xl hover:scale-110;
-  }
-  .navbtn2 {
-    @apply w-12 h-12 bg-white text-black rounded-full mx-auto flex flex-none justify-center items-center text-2xl;
-  }
-
-  .statcards {
-    @apply lg:w-[22.5rem] w-full px-6 py-8 bg-white !text-black rounded-lg lg:text-2xl flex items-center justify-around shadow-lg shadow-black;
-  }
-  .statnum {
-    @apply bg-gray-300 rounded-lg p-4;
-  }
-
-  .statcont {
-    @apply flex items-center gap-4;
-  }
-@layer components{
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-  }
-}
-  
-
-  

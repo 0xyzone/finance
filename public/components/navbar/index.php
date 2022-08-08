@@ -2,7 +2,7 @@
 include 'menuvars.php';
 ?>
 
-<div class="w-16 h-auto bg-stone-900/50 md:flex flex-col justify-between gap-2 fixed top-0 bottom-0 z-10 hidden">
+<div class="bignav">
     <div class="flex flex-col gap-4">
         <div class="bg-gray-50 w-full h-max rounded-b-full shadow-lg">
             <a href="<?php echo link; ?>"><img src="<?php echo link; ?>img/logo.gif" alt="logo"></a>
@@ -17,7 +17,7 @@ include 'menuvars.php';
         <a href="<?php echo link; ?>logout.php" class="text-stone-900 text-2xl" onclick="return confirm('Are you sure you want to logout?')"><i class="fa-solid fa-power-off"></i></a>
     </div>
 </div>
-<div class="w-full h-16 flex items-center gap-2 z-10 md:hidden fixed bottom-0 border-b-2">
+<div class="smallnav">
     <div class="w-full h-20 -mb-5 flex-none absolute bg-stone-800 blur z-0">
 
     </div>
