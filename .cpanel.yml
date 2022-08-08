@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/vidantac/public_html/
     - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
