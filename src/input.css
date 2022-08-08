@@ -120,6 +120,12 @@ input[type="number"] {
 input[type="password"] {
   @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
 }
+input[type="email"] {
+  @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
+input[type="tel"] {
+  @apply !bg-transparent border-0 !border-b-2 !px-2 focus:border-b-lime-500 smooth text-white w-full pb-1 !ring-0 !outline-none;
+}
 
 input[name="tuser"]{
   opacity: 0;
