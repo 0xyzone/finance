@@ -21,7 +21,7 @@ if (isset($_SESSION['vcaf_user'])) {
     <title id="title"></title>
 </head>
 
-<body class="bg-neutral-800 w-screen h-screen relative font-light lg:font-normal">
+<body class="bg-gradient-to-t from-[#111] to-[#333] w-screen h-screen relative font-light lg:font-normal">
 
     <?php
     if (isset($_SESSION['error'])) :

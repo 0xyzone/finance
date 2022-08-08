@@ -1,10 +1,11 @@
 <?php if(isset($_GET['page'])):?>
+    <?php if($_GET['page'] == "dashboard"): ?>
     <script>
         var title = "Dashboard";
         $("#title").html(title);
     </script>
-
-<?php else:?>
+    <?php endif; ?>
+<?php else: ?>
 
     <script>
         var title = "Homepage";
