@@ -9,7 +9,6 @@
         include 'dashboard.php';
     }elseif($_GET['page'] == "transactions"){
         include 'addtransactions.php';
-
     };
     ?>
 <?php endif; ?>
