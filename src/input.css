@@ -182,7 +182,7 @@ input[type=number] {
 }
 
 .statcards {
-  @apply lg:w-[22.5rem] w-full px-6 py-8 bg-white !text-black rounded-lg lg:text-2xl flex items-center justify-around shadow-lg shadow-black;
+  @apply 2xl:w-full w-8/12 2xl:px-6 2xl:py-8 bg-white !text-black rounded-lg lg:text-2xl flex items-center justify-around shadow-lg shadow-black;
 }
 .statnum {
   @apply bg-gray-300 rounded-lg p-4;

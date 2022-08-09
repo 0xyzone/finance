@@ -11,9 +11,9 @@
         var title = "Homepage";
         $("#title").html(title);
     </script>
-    <main class="w-full flex flex-col pb-32">
-        <section class="w-full h-max flex justify-center my-10 fadeInTop">
-            <div class="w-full h-max grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
+    <main class="w-full grid pb-32">
+        <section class="w-full 2xl:w-11/12 h-max grid grid-cols-1 2xl:grid-cols-4 justify-center my-10 fadeInTop gap-4">
+            
                 <div class="statcards">
                     <div class="statcont">
                         <i class="fa-thin fa-2x fa-briefcase"></i>
@@ -51,9 +51,9 @@
                         <span>0000</span>
                     </div>
                 </div>
-            </div>
+            
         </section>
-        <section class="w-10/12 2xl:w-full h-max lg:container mx-auto">
+        <section class="w-full h-max lg:container mx-auto">
             <div class="w-full px-10 py-4 bg-gray-500">
                 something
             </div>
